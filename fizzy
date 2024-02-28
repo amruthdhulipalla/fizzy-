@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizzy</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: black;
+        }
+
+        header {
+            background-color: #f44336;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .restaurant, .offer {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #333;
+            border: 1px solid #333;
+        }
+
+        .restaurant img {
+            width: 20%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .testimonial {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: red;
+            border: 1px solid red;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        /* Custom colors */
+        .cuisine, .dish {
+            background-color: #ff9800;
+            color: #fff;
+            padding: 8px 12px;
+            margin-right: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* Adjustments for images and buttons */
+        .category-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .category-img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        /* Login form styles */
+        .login-form {
+            display: none;
+            max-width: 300px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            background: #f44336;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background: #d32f2f;
+        }
+
+        /* Advertisement styles */
+        .advertisement {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .advertisement h2 {
+            margin-bottom: 10px;
+        }
+
+        .advertisement p {
+            margin-bottom: 20px;
+        }
+
+        .advertisement a {
+            color: #f44336;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .advertisement a:hover {
+            text-decoration: underline;
+        }
+
+        /* About section styles */
+        .about {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Contact section styles */
+        .contact {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact a {
+            color: #f44336;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav>
+            <div class="logo">Fizzy</div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="offers.html">offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main content -->
+        <section class="section">
+            <h2>Trending Cuisines</h2>
+            <div class="category-container">
+                <div>
+                    <img src="indian.jpeg" alt="Indian Cuisine" class="category-img">
+                    <div class="cuisine">Indian</div>
+                </div>
+                <div>
+                    <img src="asian.jpeg" alt="Asian Cuisine" class="category-img">
+                    <div class="cuisine">Asian</div>
+                </div>
+                <div>
+                    <img src="mexican.jpeg" alt="Mexican Cuisine" class="category-img">
+                    <div class="cuisine">Mexican</div>
+                </div>
+                <div>
+                    <img src="italian.jpeg" alt="Italian Cuisine" class="category-img">
+                    <div class="cuisine">Italian</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Popular Dishes</h2>
+            <div class="dish">Pizza</div>
+            <div class="dish">Burger</div>
+            <div class="dish">Sushi</div>
+            <div class="dish">Tacos</div>
+            <div class="dish">desserts</div>
+            <div class="dish">cakes</div>
+            <div class="dish">mocktails</div>
+            <div class="dish">grocerys</div>
+        </section>
+
+        <section class="section">
+            <h2>Featured Restaurants</h2>
+            <div class="restaurant">
+                <img src="tom.jpeg" alt="Foodie's Delight" class="category-img">
+                <h3>Foodie's Delight</h3>
+                <p>Italian Cuisine</p>
+            </div>
+            <div class="restaurant">
+                <img src="ikkk.jpeg" alt="Spice Villa" class="category-img">
+                <h3>Spice Villa</h3>
+                <p>Indian Cuisine</p>
+            </div>
+            <div class="restaurant">
+                <img src="burger.jpeg" alt="Sushi Master" class="category-img">
+                <h3>Sushi Master</h3>
+                <p>Japanese Cuisine</p>
+            </div>
+            <div class="restaurant">
+                <img src="bliss.jpeg" alt="Burger Bliss" class="category-img">
+                <h3>Burger Bliss</h3>
+                <p>American Cuisine</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"The food was amazing! It arrived quickly and was still hot. Highly recommend!"</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"I've ordered from Fizzy multiple times now and they never disappoint. Keep up the good work!"</p>
+                <p>- Jane Smith</p>
+            </div>
+        </section>
+
+        <!-- Advertisement section -->
+        <section class="section advertisement">
+            <h2>Special Offer!</h2>
+            <p>Order now and get 20% off on your first order. Use code <strong>FIZZY20</strong> at checkout!</p>
+            <a href="#">Order Now</a>
+        </section>
+
+        <!-- About section -->
+        <section class="section about">
+            <h2>About Us</h2>
+            <p>Fizzy is a leading online food delivery platform that connects users with their favorite restaurants. We strive to provide a seamless ordering experience and ensure timely delivery of delicious meals to our customers.</p>
+        </section>
+
+        <!-- Contact section -->
+        <section class="section contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries or assistance, feel free to contact us:</p>
+            <p>Email: info@fizzy.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p><a href="tel:+11234567890">Call Now</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+        <div class="footer-content">
+            <p>&copy; 2024 Fizzy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
